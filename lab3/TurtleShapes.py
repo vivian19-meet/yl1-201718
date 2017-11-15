@@ -1,0 +1,11 @@
+import turtle
+turtle.register_shape('star',((100,100),(-20,100),(80,0),(40,150),(0,0),(100,100),(-20,100),(80,0),(40,150),(0,0)))
+turtle.shape('star')
+turtle.left(30)
+turtle.goto(100,100)
+turtle.goto(-20,100)
+turtle.right(30)
+turtle.goto(80,0)
+turtle.goto(40,150)
+turtle.goto(0,0)
+turtle.mainloop()
