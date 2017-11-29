@@ -1,12 +1,43 @@
-import turtle
-
-class Square(Turtle):
-	def __init__(self,size,):
+from turtle import *
+class square(Turtle):
+	def __init__(self,size):
 		Turtle.__init__(self)
-		self.shapesize(size)
 		self.shape('square')
+		self.shapesize(size)
+class hexagon(Turtle):
+	def __init__(self,size):
+		Turtle.__init__(self)
+		self.begin_poly()
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		self.end_poly()
+		p = self.get_poly()
+		register_shape("hexagon", p)
+		self.shape('hexagon')
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		self.left(60)
+		self.fd(100)
+		
 
-class Rectangle(object):
-	def __init__(self,width,hight):
-		self.width(width)
-		self.hight(hight)
+hx = hexagon(5)
